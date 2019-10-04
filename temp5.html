@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<style>
+    html,body
+    {
+        margin: 0%;
+        padding: 0%;
+    }
+    *
+    {
+        box-sizing: border-box;
+    }
+    .main
+    {
+        width: 100%;
+        height: 100vh;
+      
+        /* border: 5px solid red; */
+    }
+    .back
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .container
+    {
+        width: 100%;
+        height: 100%;
+        background-image: url('coffee.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        
+    }
+    .overlay
+    {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 0, 0,0.8);
+        position: absolute;
+        top: 0%;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        
+    }
+    .image
+    {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        width: 25%;
+        height: 80%;
+        /* border: 2px solid blue; */
+        background-image: url('device-front.png');
+        background-size: 100% 100%;
+    }
+    .nav
+    {
+        width: 100%;
+        height: 10%;
+        /* border: 5px solid black; */
+        top: 0%;
+        position: absolute;
+        display: flex;
+    }
+    .nav1
+    {
+        color: whitesmoke;
+        font-size: 50px;
+        width: 20%;
+        /* border: 2px solid blue; */
+        padding-left: 7%;
+    }
+    .nav2
+    {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        /* border: 2px solid green; */
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        left: 30%;
+    }
+    .nav3
+    {
+        display: flex;
+        width: 15%;
+        height: 100%;
+        display: flex;
+        /* border: 5px solid yellowgreen; */
+        justify-content: flex-end;
+        right: 0%;
+        position: absolute;
+    }
+    .nav2>li
+    {
+        list-style: none;
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 100%;
+    }
+    .nav2>li>a
+    {
+        text-decoration: none;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;   
+    }
+    .nav2>li>a:hover
+    {
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+    .social1,.social2,.social3
+    {
+        width: 34%;
+        height: 100%;
+        /* border: 5px solid gold; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .data
+    {
+        /* border: 2px solid black; */
+        width: 30%;
+        height: 40%;
+        left: 60%;
+        top: 30%;
+        position: absolute;
+        /* transform: translate(-50%,-50%); */
+    }
+    a
+    {
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    a:hover
+    {
+        color: blue;
+    }
+    .data1
+    {
+        color: white;
+        width: 100%;
+        height: 10%;
+        font-size: 40px;
+        text-align: left;
+    }
+    .data2
+    {
+        color: white;
+        width: 100%;
+        height: 10%;
+        font-size: 20px;
+        text-align: left;
+        top: 20%;
+        position: absolute;
+    }
+    .data3
+    {
+        top: 50%;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        position: absolute;
+    }
+    .data31,.data32
+    {
+        width: 45%;
+        height: 100%;
+        margin: 2%;
+        /* border: 2px solid white; */
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+</style>
+<body>
+    <div class="main">
+        
+        <div class="back">
+            <div class="container"></div>
+            <div class="overlay"></div>
+            <div class="image"></div>
+            <div class="nav">
+                <div class="nav1">Flow</div>
+                <div class="nav2">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </div>
+                <div class="nav3">
+                   <div class="social1">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   </div>
+                   <div class="social2">
+                   <a href="#"> <i class="fab fa-google"></i></a>
+                   </div>
+                   <div class="social3">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                   </div>
+                </div>
+            </div>
+            <div class="data">
+                <div class="data1">Hold Your Horses</div>
+                <div class="data2">Never Ever Think of Giving Up!<br>Winners Never Quit And Quitters Never Win.</div>
+                <div class="data3">
+                    <div class="data31"><i class="fab fa-google-play"></i>&nbsp;&nbsp;&nbsp;Google Play</div>
+                    <div class="data32"><i class="fab fa-apple"></i>&nbsp;&nbsp;&nbsp;App Store</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
